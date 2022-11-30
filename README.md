@@ -1,16 +1,3 @@
-# habit_tracker
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+HIVE DATA STORAGE: https://pub.dev/packages/hive
+HEAT MAP: https://pub.dev/packages/flutter_heatmap_calendar
+![image](https://user-images.githubusercontent.com/114938111/204898289-18df4e92-3bcc-411e-a600-291f8c06e1a3.png)
