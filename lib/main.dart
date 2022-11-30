@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:habit_tracker/Pages/home_page.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'Pages/home_page.dart';
 
 void main() async {
 //
@@ -17,7 +17,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+//------------------------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -23,7 +23,7 @@ class HabitTile extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Slidable(
         endActionPane: ActionPane(
-          motion: StretchMotion(),
+          motion: const StretchMotion(),
           children: [
 //edit option
             SlidableAction(
@@ -43,9 +43,11 @@ class HabitTile extends StatelessWidget {
           ],
         ),
         child: Container(
-          padding: EdgeInsets.all(24),
+          padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
-              color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+          ),
           child: Row(
             children: [
 //

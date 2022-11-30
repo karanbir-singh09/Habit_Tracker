@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 class MyAlertBox extends StatelessWidget {
   final controller;
+  final String hintText;
   final VoidCallback onSave;
   final VoidCallback onCancel;
-  final String hintText;
 
-  const MyAlertBox(
-      {super.key,
-      required this.hintText,
-      required this.controller,
-      required this.onSave,
-      required this.onCancel});
+  const MyAlertBox({
+    super.key,
+    required this.controller,
+    required this.hintText,
+    required this.onSave,
+    required this.onCancel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +23,11 @@ class MyAlertBox extends StatelessWidget {
         style: const TextStyle(color: Colors.white),
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle: TextStyle(color: Colors.white),
-          enabledBorder:
-              OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
-          focusedBorder:
-              OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+          hintStyle: TextStyle(color: Colors.grey[700]),
+          enabledBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.white)),
+          focusedBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.white)),
         ),
       ),
       actions: [
