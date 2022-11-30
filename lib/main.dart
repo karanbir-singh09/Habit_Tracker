@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
-
+import 'package:hive_flutter/hive_flutter.dart';
 import 'Pages/home_page.dart';
 
-void main() {
+void main() async {
+//
+//initialize hive---------------------------------------------------------------
+//
+  await Hive.initFlutter();
+//
+// Habit Database OPEN-BOX------------------------------------------------------
+//
+  await Hive.openBox("Habit_Database");
+
   runApp(const MyApp());
 }
 
@@ -11,9 +20,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
   }
 }
